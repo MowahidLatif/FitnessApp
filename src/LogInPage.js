@@ -2,6 +2,8 @@ import React from "react";
 import Button from '@mui/material/Button';
 import TextField from '@mui/material/TextField';
 import { alpha, styled } from '@mui/material/styles';
+import { Box} from "@mui/material"
+
 
 const CssTextField = styled(TextField)({
   display: 'flex',
@@ -34,14 +36,21 @@ const SubmitCustonBotton = styled(Button)({
   boxShadow: '0 3px 5px 2px rgba(255, 105, 135, .3)',
   color: 'white',
   height: 48,
-  padding: '0 30px',
-  display: 'flex',
+  padding: '0 30',
 });
 
+const BackGroundBox = styled(Box)({
+  background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
+  border: 5,
+  borderRadius: 4,
+  padding: 6,
+  alignItems: 'center',
+  alignSelf: 'center'
+})
 
  export default function LogInPage(){
   return (
-    <div>
+    <BackGroundBox>
       <form>
         <div>
         <CssTextField
@@ -59,13 +68,12 @@ const SubmitCustonBotton = styled(Button)({
         <CssTextField
           label="Phone Number..." id="custom-css-outlined-input"/>
         </div>
-       
-        <SubmitCustonBotton>
-        please work!
-      </SubmitCustonBotton>
-      
-    </form>
-    </div>
+        <div>
+          <SubmitCustonBotton>
+            Log In!
+          </SubmitCustonBotton>
+        </div>
+      </form>
+    </BackGroundBox>
   )
 }
-
