@@ -7,8 +7,12 @@ import { Box} from "@mui/material"
 
 const CssTextField = styled(TextField)({
   display: 'flex',
+  width: '500px',
   height: 48,
   margin: '30px',
+  display: 'flex',
+  justifyContent: 'center', 
+  alignItems: 'center', 
   '&/MuiInput-underline': 'black',
   '& label.Mui-focused': {
     color: 'green',
@@ -42,10 +46,11 @@ const SubmitCustonBotton = styled(Button)({
 const BackGroundBox = styled(Box)({
   background: 'linear-gradient(45deg, #FE6B8B 30%, #FF8E53 90%)',
   border: 5,
-  borderRadius: 4,
+  borderRadius: 99,
   padding: 6,
   alignItems: 'center',
-  alignSelf: 'center'
+  alignSelf: 'center',
+  margin: 50
 })
 
  export default function LogInPage(){

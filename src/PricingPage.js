@@ -5,8 +5,8 @@ import { Box} from "@mui/material"
 const PricingPage = () => {
 
   const PricingBoxes = styled(Box)({
-    width: 315,
-    height: 50,
+    width: 330,
+    height: 550,
     background: 'green',
     border: 5,
     margin: 10,
